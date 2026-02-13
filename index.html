@@ -64,16 +64,42 @@
       box-shadow: 0 4px 24px rgba(0,0,0,0.10);
     }
     .card {
-      border: 2px solid #212529;
-      border-radius: 18px;
-      box-shadow: 0 2px 16px rgba(0,0,0,0.07);
-      transition: transform 0.2s, border-color 0.2s;
-      border-top: none;
+      border: none;
+      border-radius: 20px;
+      background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      transition: all 0.3s ease;
+      overflow: hidden;
     }
-    .card:hover {
-      transform: translateY(-6px) scale(1.01);
-      box-shadow: 0 8px 32px rgba(0,0,0,0.13);
-      border-color: #343a40;
+    .card .card-img-top {
+      border-radius: 18px 18px 0 0;
+    }
+    .btn-primary {
+      background: linear-gradient(45deg, #007bff, #0056b3);
+      border: none;
+      transition: all 0.3s;
+    }
+    .btn-primary:hover {
+      background: linear-gradient(45deg, #0056b3, #004085);
+      transform: scale(1.05);
+    }
+    .btn-info {
+      background: linear-gradient(45deg, #17a2b8, #138496);
+      border: none;
+      transition: all 0.3s;
+    }
+    .btn-info:hover {
+      background: linear-gradient(45deg, #138496, #117a8b);
+      transform: scale(1.05);
+    }
+    .btn-success {
+      background: linear-gradient(45deg, #28a745, #218838);
+      border: none;
+      transition: all 0.3s;
+    }
+    .btn-success:hover {
+      background: linear-gradient(45deg, #218838, #1e7e34);
+      transform: scale(1.05);
     }
     .skill-card {
       background: #fff;
@@ -152,7 +178,7 @@
       padding-bottom: 1.5rem;
     }
     .footer a img {
-      filter: grayscale(1) brightness(1.2);
+      filter: none;
       transition: filter 0.2s;
     }
     .footer a:hover img {
@@ -220,8 +246,6 @@
   #li3:hover,
   #li4:hover,
   #li5:hover,
-  #view:hover,
-  #download:hover,
   #xx:hover,
   #gmail:hover,
   #linked:hover,
@@ -235,9 +259,7 @@
   #skill5:hover,
   #skill6:hover,
   #skill7:hover,
-  #skill8:hover,
-  #card1:hover,
-  #card2:hover {
+  #skill8:hover {
     transform: scale(1.1);
     cursor: pointer;
   }
@@ -339,12 +361,12 @@
           <h5 class="mb-2">Hello, I'm</h5>
           <h1 class="text-primary fw-bold mb-2" style="font-size:2.2rem;">DILSON BHARATH</h1>
           <h4 class="mb-3">Aspiring <span style="color: blueviolet;">Software Developer</span></h4>
-          <a id="abc" href="#connect" class="btn btn-success rounded-pill px-4 py-2 mb-2 shadow-sm">Let's Connect</a>
+          <a id="abc" class="btn btn-success rounded-pill px-4 py-2 mb-2 shadow-sm" onclick="document.querySelector('#connect').scrollIntoView({behavior:'smooth'});">Let's Connect</a>
         </div>
       </div>
       <div class="d-flex justify-content-center rounded mt-4 pt-4 py-2 my-2">
         <a id="xx" style="background-color: white; width: 40px; height: 36px; border-radius: 50%; "
-          class="d-flex align-items-center justify-content-center shadow-lg" href="#about"><img src="2985150.png"
+          class="d-flex align-items-center justify-content-center shadow-lg" onclick="document.querySelector('#about').scrollIntoView({behavior:'smooth'});"><img src="2985150.png"
             style="width: 30px; height: 28px;"></a>
       </div>
     </div>
@@ -371,26 +393,26 @@ Strong interest in machine learning and data analysis. Proficient in web develop
 
   <section id="projects">
     <div class=" mb-4">
-      <h2 class="section-title project-title-solid text-center">Check out the <span class="highlight-word">PROJECTS</span> I've worked on</h2>
+      <h2 class="section-title project-title-solid text-center"> <span class="highlight-word">PROJECTS</span> I've worked On</h2>
     </style>
     <style>
       .project-title-solid {
         font-family: 'Segoe UI', Arial, sans-serif;
         font-size: 2.1rem;
-        font-weight: 800;
+        font-weight: 700;
         letter-spacing: 0.2px;
-        color: #23272f;
+        
+        color: #573b9a;
         margin-bottom: 1.2rem;
         margin-top: 0.5rem;
         transition: all 0.3s;
       }
       .project-title-solid .highlight-word {
-        font-family: 'Segoe UI Semibold', 'Segoe UI', Arial, sans-serif;
-        color: #1565c0;
+        font-family: 'Segoe UI', Arial, sans-serif;
+        color: #61205c;
         font-size: 2.3rem;
-        font-weight: 900;
-        letter-spacing: 0.3px;
-        padding: 0 0.15em;
+        font-weight: 800;
+        letter-spacing: 0.2px;
       }
       @media (max-width: 767px) {
         .project-title-solid {
@@ -442,7 +464,7 @@ Strong interest in machine learning and data analysis. Proficient in web develop
   <section id="skills" style="margin-top: 70px;">
     <div>
       <div class="text-center">
-        <h2 class="text-success fw-bold section-title">MY SKILLS</h2>
+        <h2 class="text-success fw-bold section-title">My Skills !!</h2>
         <p class="text-secondary mb-3">Here are the skills I have developed over the months.</p>
       </div>
       <div class="container-fluide mt-4">
