@@ -30,8 +30,8 @@ function App() {
         <AboutSection about={aboutContent} />
         <ProjectsSection items={projects} />
         <SkillsSection items={skills} />
+        <ContactSection contact={contactContent} />
       </main>
-      <ContactSection contact={contactContent} />
     </div>
   );
 }

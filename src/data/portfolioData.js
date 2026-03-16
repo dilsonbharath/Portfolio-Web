@@ -30,7 +30,7 @@ export const navLinks = [
 
 export const heroContent = {
   greeting: "Hello, I'm",
-  name: "Dilson Bharath",
+  name: "Dilson Bharath R",
   role: "Aspiring Software Developer",
   summary:
     "Final-year AI and Data Science student focused on building practical, user-friendly web products and data-driven solutions.",
@@ -82,10 +82,12 @@ export const skills = [
   { name: "Git", icon: gitIcon, level: "Workflow" },
   { name: "C++", icon: cppIcon, level: "DSA" },
   { name: "VS Code", icon: vscodeIcon, level: "Workflow" },
-  { name: "SQL", icon: pythonIcon, level: "Data" },
-  { name: "DSA", icon: pythonIcon, level: "Problem Solving" },
+  { name: "SQL", icon: cppIcon, level: "Data" },
+  { name: "DSA", icon: leetcodeIcon, level: "Problem Solving" },
   { name: "FastAPI", icon: pythonIcon, level: "Backend" },
-  { name: "AI", icon: pythonIcon, level: "Learning Focus" }
+  { name: "AI", icon: bootstrapIcon, level: "Learning Focus" },
+  { name: "React", icon: htmlIcon, level: "Frontend" },
+  { name: "Vite", icon: vscodeIcon, level: "Build Tool" }
 ];
 
 export const contactContent = {
