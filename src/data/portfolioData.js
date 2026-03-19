@@ -1,7 +1,6 @@
-import heroImage from "../assets/images/hero-work.jpg";
 import profileImage from "../assets/images/profile.png";
 import projectPortfolioImage from "../assets/images/project-portfolio.png";
-import downArrowImage from "../assets/images/arrow-down.png";
+import spidermanHeroVideo from "../assets/Spiderman Marvel Rivals 4k Live Wallpaper _ Epic Superhero(4K_60FPS).webm";
 import resumeFile from "../assets/documents/dilson-bharath-resume.pdf";
 import portfolio from "../assets/images/port.png";
 import habit from "../assets/images/web.png";
@@ -34,8 +33,7 @@ export const heroContent = {
   role: "Aspiring Software Developer",
   summary:
     "Final-year AI and Data Science student focused on building practical, user-friendly web products and data-driven solutions.",
-  image: heroImage,
-  arrowIcon: downArrowImage
+  backgroundVideo: spidermanHeroVideo
 };
 
 export const aboutContent = {

@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef } from "react";
 
-function SkillsSection({ items }) {
+function SkillsSection({ items, onNavigate }) {
   const skills = useMemo(() => items ?? [], [items]);
   const containerRef = useRef(null);
   const svgRef = useRef(null);
@@ -287,6 +287,19 @@ function SkillsSection({ items }) {
               </div>
             </article>
           ))}
+        </div>
+
+        <div className="skills-scroll-wrap">
+          <button
+            type="button"
+            className="scroll-top-btn scroll-top-btn--bow"
+            aria-label="Scroll to Home"
+            onClick={() => onNavigate?.("home")}
+          >
+            <span className="bow-arrow" aria-hidden="true">
+              <span className="bow-arrow-tip" />
+            </span>
+          </button>
         </div>
       </div>
     </section>

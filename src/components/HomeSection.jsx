@@ -1,14 +1,14 @@
 function HomeSection({ hero, onNavigate }) {
   return (
-    <section id="home" className="section hero-section">
+    <section id="home" className="section hero-section hero-immersive">
+      <div className="hero-video-bg" aria-hidden="true">
+        <video className="hero-video" autoPlay muted loop playsInline preload="metadata">
+          <source src={hero.backgroundVideo} type="video/webm" />
+        </video>
+        <div className="hero-video-overlay" />
+      </div>
       <div className="container">
-        <div className="hero-panel reveal">
-          <div className="hero-visual">
-            <div className="hero-image-wrap">
-              <img src={hero.image} alt="Dilson Bharath" />
-            </div>
-          </div>
-
+        <div className="hero-panel">
           <div className="hero-copy">
             {hero.badge ? <p className="hero-badge">{hero.badge}</p> : null}
             <p className="hero-greeting">{hero.greeting}</p>
@@ -25,17 +25,6 @@ function HomeSection({ hero, onNavigate }) {
               </button>
             </div>
           </div>
-        </div>
-
-        <div className="hero-scroll-wrap">
-          <button
-            type="button"
-            className="hero-scroll-btn"
-            aria-label="Scroll to About section"
-            onClick={() => onNavigate("about")}
-          >
-            <img src={hero.arrowIcon} alt="Scroll down" />
-          </button>
         </div>
       </div>
     </section>

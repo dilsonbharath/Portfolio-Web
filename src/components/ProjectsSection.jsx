@@ -5,7 +5,6 @@ function ProjectsSection({ items }) {
     <section id="projects" className="section section-soft">
       <div className="container">
         <div className="section-head reveal">
-          <h3 className="section-kicker">Selected Work</h3>
           <h2 className="section-title">Projects</h2>
           <p className="section-subtitle">
             A few projects where I focused on usability, clean implementation, and responsive
@@ -30,7 +29,6 @@ function ProjectsSection({ items }) {
                     <img src={project.image} alt={project.title} />
                   </div>
                   <div className="project-body">
-                    <p className="project-eyebrow">{`Featured Project ${String(index + 1).padStart(2, "0")}`}</p>
                     <h4 className="project-title">{project.title}</h4>
                     <p className="project-text">{project.description}</p>
 
