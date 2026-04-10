@@ -120,7 +120,7 @@ export const contactContent = {
   socialLinks: [
     {
       name: "Email",
-      href: "mailto:[dilsonbharath76@gmail.com]",
+      href: "https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSPFqxDqDgNxKNWMGvvCwSZBQWsjSSSjKTKCCjRlLgfdxWGcjHHsXCxSXZhWVwzcbQBJlbSM",
       icon: emailIcon
     },
     {
