@@ -120,7 +120,7 @@ export const contactContent = {
   socialLinks: [
     {
       name: "Email",
-      href: "mailto:dilsonbharath76@gmail.com",
+      href: "mailto:[dilsonbharath76@gmail.com]",
       icon: emailIcon
     },
     {
